@@ -1,0 +1,28 @@
+.upload-container {
+  position: relative;
+  border: 1px solid #92b0b3;
+  background: #f1f1f1;
+  outline: 2px dashed #92b0b3;
+  outline-offset: -10px;
+  padding: 100px 0px 100px 250px;
+  width: 500px;
+  input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  &:hover{
+    background: #ddd;
+  }
+  &:before{
+    position: absolute;
+    content: 'Drag your file in area';
+    top: 20px;
+    left: 40%;
+    opacity: .3;
+  }
+}
+
